@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+
+    body
+       
+                li ID: #{user.id}
+                li Name: #{user.name}
+                li Email: #{user.email}
+                li Address: #{user.address}
+                li Age: #{user.age}
+                ul
+                    a(href=`/edit/${+user.id}`) 
+
+        a(href='/') 

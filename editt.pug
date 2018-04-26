@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+
+    body
+        form(method='POST', action='/createusers')
+            h1 app
+                label(for='id')
+                input(id='id', name='id', value= user.id)
+            <br>
+                label(for='name')
+                input(id='name', name='name', value= user.name)
+            <br>
+                label(for='email')
+                input(id='email', name='email', value= user.email)
+          
+            <br>
+                label(for='age')
+                input(id='age', name='age', value= user.age)
+            <br>
+                input(type='submit', value='Add User')
