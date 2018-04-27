@@ -1,15 +1,22 @@
-doctype html
-html
-    head
+body  
+ h1 Hello
 
-    body
-       
-                li ID: #{user.id}
-                li Name: #{user.name}
-                li Email: #{user.email}
-                li Address: #{user.address}
-                li Age: #{user.age}
-                ul
-                    a(href=`/edit/${+user.id}`) 
+form(action="/users/create", method="post")  
+label(form="name") Users
 
-        a(href='/') 
+input(type="text", id="users", name="users")
+
+label(form="email") Email
+
+input(type="email", id="email", name="email")
+
+label(form="age") age
+
+input(type="age", id="age", name="age")
+
+label(form="name") Name
+
+input(type="name", id="name", name="name")
+
+
+input(type="submit", value="Add User")
